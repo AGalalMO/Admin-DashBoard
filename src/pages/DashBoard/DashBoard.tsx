@@ -11,7 +11,7 @@ const DashBoard = () => {
       <ComplaintTable/>
     
     </div>
-  )
-}
+  );
+};
 
-export default DashBoard
+export default DashBoard;

@@ -22,3 +22,8 @@ export interface sideBarInterFace{
   title:string;
   icon:string;
 }
+
+export interface filterItem{
+  name:string,
+  isSelected:boolean
+}
