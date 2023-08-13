@@ -8,3 +8,13 @@ opacity: 1;
 width: 1338px;
 height: 822px;
 `
+
+ export const GreenCell = styled.div`
+  background-color: green;
+  color: white;
+`;
+
+ export const RedCell = styled.div`
+  background-color: red;
+  color: white;
+`;
