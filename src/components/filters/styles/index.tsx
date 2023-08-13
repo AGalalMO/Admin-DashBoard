@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import styled from "styled-components";
 
 export const StyledFilterItemWrapper = styled.div<{ isSelected: boolean }>`
@@ -11,3 +12,9 @@ export const StyledFilterText = styled.span<{ isSelected: boolean }>`
   text-align: center;
   color: ${(props) => (props.isSelected ? "#fff" : "#000")};
 `;
+
+export const StyledApplyFilterButton = styled(Button)({
+  background: '#438FCE',
+  color: '#fff'
+  
+})

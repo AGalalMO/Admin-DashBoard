@@ -6,8 +6,8 @@ export const StyledDataGrid = styled(DataGrid)`
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 17px;
   opacity: 1;
-  width: 1338px;
-  height: 822px;
+  width: 100%;
+  height: 100%
 `;
 
 export const SharedCellCell = styled.div`
@@ -16,6 +16,9 @@ export const SharedCellCell = styled.div`
   border-radius: 13px;
   opacity: 1;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const SuspendedCell = styled(SharedCellCell)`

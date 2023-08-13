@@ -1,4 +1,4 @@
-import { sideBarInterFace } from "../../@types";
+import { sideBarInterFace } from "../@types";
 
 
 export const sideBarData  : sideBarInterFace [] =[

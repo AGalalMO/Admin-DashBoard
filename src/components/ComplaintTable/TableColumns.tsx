@@ -1,4 +1,4 @@
-import { ComplaintDataList } from "../../_mock/TableData";
+import { ComplaintInterface } from "../../@types";
 import {
   ClosedCell,
   ClosedWitCoupon,
@@ -6,10 +6,13 @@ import {
   RedTextCell,
   SuspendedCell,
 } from "./styles";
-import { DataGridProps } from "@mui/x-data-grid";
 
 export const TableColumns = [
-  { field: "ComplaintNumber", headerName: "Complaint Number", width: 180 },
+  {
+    field: "Complaint Number",
+    headerName: "Complaint Number",
+    width: 180,
+  },
   {
     field: "ComplaintDepartment",
     headerName: "Complaint Department",
@@ -49,16 +52,18 @@ export const TableColumns = [
   { field: "TaxpayerName", headerName: "Taxpayer Name", width: 180 },
 ];
 
-export const dataGridProps: DataGridProps = {
-  rows: ComplaintDataList,
-  columns: TableColumns,
-  componentsProps: {
-    pagination: {
-      page: 5,
-      // pageSize: 5,
-      rowsPerPageOptions: [5, 10, 20],
+export const dataGridProps = (data: ComplaintInterface[]) => {
+  return {
+    rows: data,
+    columns: TableColumns,
+    componentsProps: {
+      pagination: {
+        page: 5,
+        // pageSize: 5,
+        rowsPerPageOptions: [5, 10, 20],
+      },
     },
-  },
 
-  // disableSelectionOnClick: true,
+    // disableSelectionOnClick: true,
+  };
 };

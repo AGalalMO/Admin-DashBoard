@@ -1,17 +1,9 @@
-import SideBar from '../../components/SideBar/SideBar';
-import ComplaintTable from '../../components/ComplaintTable/ComplaintTable';
+import SideBar from "../../components/SideBar/SideBar";
+import ComplaintTable from "../../components/ComplaintTable/ComplaintTable";
+import DashBoard from "../../components/Dashboard";
 
-
-
-const DashBoard = () => {
-
-  return (
-    <div>
-      <SideBar/>
-      <ComplaintTable/>
-    
-    </div>
-  );
+const DashBoardPage = () => {
+  return <DashBoard />;
 };
 
-export default DashBoard;
+export default DashBoardPage;
