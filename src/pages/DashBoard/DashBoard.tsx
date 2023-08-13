@@ -1,19 +1,15 @@
-import React from 'react'
-import NavBar from '../../components/navBar/navBar'
-import { useAuth0 } from '@auth0/auth0-react';
+import SideBar from '../../components/SideBar/SideBar';
+import ComplaintTable from '../../components/ComplaintTable/ComplaintTable';
 
 
 
 const DashBoard = () => {
-    const {user, isAuthenticated } = useAuth0();
 
   return (
     <div>
-      <NavBar/>
-      {isAuthenticated ? 
-      <h1>Welcome, {user?.name}!</h1>:
-      <h1>please login first</h1>
-      }
+      <SideBar/>
+      <ComplaintTable/>
+    
     </div>
   )
 }
