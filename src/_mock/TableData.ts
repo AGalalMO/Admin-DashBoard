@@ -1,4 +1,4 @@
-import { ComplaintInterface } from "./@types";
+import { ComplaintInterface } from "../@types";
 
 export const ComplaintDataList: ComplaintInterface[] = [
     {

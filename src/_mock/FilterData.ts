@@ -17,4 +17,6 @@ export const filtersData: filterItem[] = [
     isSelected: false,
     name: "المكافحة",
   },
+  
 ];
+
